@@ -1,5 +1,54 @@
 @import "tailwindcss";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@theme {
+  --font-cedarville: 'cedarville', 'cursive';
+  --font-syne: 'syne', 'sans-serif';
+  
+}
 
+@layer base {
+  html {
+    font-family: 'syne', sans-serif; 
+  }
+}
+
+.draw-border {
+  position: relative;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.draw-border::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 8px;
+  border: 2px solid white;
+  clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+  transition: opacity 0.3s ease;
+}
+
+.draw-border:hover::before {
+  animation: draw-border-animation 1.5s ease-in-out forwards;
+}
+
+@keyframes draw-border-animation {
+  0% {
+    clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+  }
+
+  50% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  100% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
