@@ -8,7 +8,9 @@
   --font-syne: 'syne', 'sans-serif';
   
 }
-
+html {
+  scroll-behavior: smooth;
+}
 @layer base {
   html {
     font-family: 'syne', sans-serif; 

@@ -9,12 +9,16 @@ import Hero from "./pages/Hero";
 // src/components/Hero.jsx
 import Profile from "./assets/Amal.png";
 import { Github, Linkedin, Instagram, Download } from "lucide-react";
-
+import SkillsPage from "./pages/Skills";
 function App() {
   return (
     <>
+    <div className="relative bg-[#14151C] ">
     <Hero />
     <About />
+        
+    <SkillsPage />
+    </div>
     </>
   );
 }
