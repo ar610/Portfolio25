@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Amal2 from '../assets/Amal2.png';
+import { motion } from "framer-motion";
 
 export default function About() {
   const [scrollY, setScrollY] = useState(0);
@@ -22,7 +23,9 @@ export default function About() {
   const translateY = (1 - scrollProgress) * 100; // Slides up from bottom
 
   return (
+    
     <div 
+      id="about"
       className="relative z-20 min-h-screen bg-gradient-to-br from-purple-100 via-blue-50  to-indigo-100 flex flex-row items-center justify-center p-8 transition-transform duration-300 ease-out "
       style={{
         transform: `translateY(${translateY}vh)`,
@@ -41,6 +44,7 @@ export default function About() {
         <div className='pr-8'>
         {/* Main Heading */}
         <div className="space-y-0.5 ">
+          
           <h1 className="text-6xl font-bold text-gray-900">
             Hi There,
           </h1>

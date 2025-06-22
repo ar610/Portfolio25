@@ -3,6 +3,7 @@ import Cursor from "../components/Cursor";
 import Nav from "../components/Nav";
 import Profile from "../assets/Amal.png";
 import { Github, Linkedin, Instagram, Download } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function Hero() {
     const [scrollY, setScrollY] = useState(0);
@@ -37,14 +38,29 @@ export default function Hero() {
                 >
                     {/* Navigation */}
                     <Nav />
-
+                       
                     {/* Main Content */}
                     {/* Left Content */}
                     <div className="max-w-xl absolute left-50 top-90 transform -translate-y-1/2">
+     <motion.div
+  initial={{ opacity: 0, y: 50 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1, delay: 0.1 }}
+  layout
+>
+
+
                         <h1 className="text-4xl md:text-8xl font-syne mb-4">
                             Hi
                             <br />I am <span className="bg-gradient-to-r from-cyan-400 via-blue-500 to-blue-400 bg-clip-text text-transparent">AMAL</span>
                         </h1>
+                        </motion.div>
+                         <motion.div
+  initial={{ opacity: 0, y: 50 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1, delay: 0.1 }}
+  layout
+>
                         
                         <div className="space-y-3 mb-5 text-lg text-gray-300">
                             <div className="flex items-center space-x-3">
@@ -60,7 +76,14 @@ export default function Hero() {
                                 <span className="hover:text-cyan-400 transition-all duration-200">Forever Iterating.</span>
                             </div>
                         </div>
-
+                        </motion.div>
+<motion.div
+  initial={{ opacity: 0, y: 50 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1, delay: 0.1 }}
+  layout
+>
+      
                         {/* Social Links */}
                         <div className="flex space-x-6 mb-5">
                             <a
@@ -82,14 +105,22 @@ export default function Hero() {
                                 <Instagram size={24} />
                             </a>
                         </div>
+                        </motion.div>
+                        <motion.div
+  initial={{ opacity: 0, y: 50 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1, delay: 0.1 }}
+  layout
+>
+      
 
                         {/* Download Resume Button */}
                         <button className="flex items-center space-x-3 px-6 py-3 bg-[#080B1B] rounded-lg hover:border hover:border-white draw-border transition-all duration-200 group">
                             <Download size={20} className="group-hover:animate-bounce" />
                             <span>Download Resume</span>
                         </button>
+                            </motion.div>
                     </div>
-
                     {/* Circular Text Animation */}
                     <div className="absolute bottom-60 right-20 z-10">
                         <div
@@ -144,6 +175,7 @@ export default function Hero() {
                 {/* Spacer div to maintain scroll height */}
                 <div className="h-screen"></div>
             </div>
+            
         </>
     );
 }

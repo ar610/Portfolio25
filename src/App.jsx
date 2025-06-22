@@ -10,6 +10,7 @@ import Hero from "./pages/Hero";
 import Profile from "./assets/Amal.png";
 import { Github, Linkedin, Instagram, Download } from "lucide-react";
 import SkillsPage from "./pages/Skills";
+import Works from "./pages/Works";
 function App() {
   return (
     <>
@@ -18,6 +19,7 @@ function App() {
     <About />
         
     <SkillsPage />
+    <Works />
     </div>
     </>
   );
