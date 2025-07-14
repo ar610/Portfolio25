@@ -104,8 +104,8 @@ const SkillsPage = () => {
   };
 
   return (
-    <div id='skills' className="  relative min-h-screen  p-8 z-30 ">
-      <div className="w-full mx-auto flex flex-col items-center justify-center mt-18">
+    <div id='skills' className="  relative min-h-screen  pb-8 pl-8  pr-8  z-30 ">
+      <div className="w-full mx-auto flex flex-col items-center justify-center ">
         {/* Header */}
         <div className="text-center mb-8 mt-10" >
           <h1 className="lg:text-6xl text-3xl font-bold text-gray-900 mb-4">

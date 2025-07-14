@@ -58,7 +58,7 @@ export default function ContactSection() {
       id="contact"
       className="relative z-30 min-h-screen p-16 flex items-center justify-center"
     >
-      <div className="mt-24 mb-8 w-full max-w-6xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+      <div className=" mb-8 w-full max-w-6xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
         {/* Left Column - Content */}
         <div className="space-y-8">
           <h1 className="text-5xl lg:text-7xl font-bold text-black leading-tight">

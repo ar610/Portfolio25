@@ -38,7 +38,7 @@ function App() {
           <Nav />
           <Hero />
           <div
-            className="relative z-30 bg-gradient-to-br from-purple-100 via-blue-50 to-indigo-100 bg-no-repeat bg-cover"
+            className="relative z-30 bg-gradient-to-br from-purple-100 via-blue-50 to-indigo-100 bg-no-repeat bg-cover "
             style={{ backgroundImage: "url('/bg3.jpg')" }}
           >
             <About />

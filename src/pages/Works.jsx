@@ -111,7 +111,7 @@ const MyWorks = () => {
 
   return (
     <div id="works" className="relative min-h-screen  p-8 z-30 ">
-      <div className="max-w-6xl mx-auto flex flex-col items-center justify-center mt-24">
+      <div className="max-w-6xl mx-auto flex flex-col items-center justify-center ">
         {/* Header */}
         <h1 className="text-5xl font-bold text-gray-800 text-center mb-12">
           My Works

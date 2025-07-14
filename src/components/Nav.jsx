@@ -59,19 +59,20 @@ export default function Nav() {
             <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
           </button>
           <button
-            onClick={() => scrollToSection('works')}
-            className="relative text-white group cursor-pointer bg-transparent border-none"
-          >
-            Projects
-            <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
-          </button>
-          <button
             onClick={() => scrollToSection('skills')}
             className="relative text-white group cursor-pointer bg-transparent border-none"
           >
             Skills
             <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
           </button>
+          <button
+            onClick={() => scrollToSection('works')}
+            className="relative text-white group cursor-pointer bg-transparent border-none"
+          >
+            Projects
+            <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+          </button>
+          
           <button
             onClick={() => scrollToSection('contact')}
             className="relative text-white group cursor-pointer bg-transparent border-none"
