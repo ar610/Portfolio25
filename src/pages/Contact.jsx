@@ -25,7 +25,6 @@ export default function ContactSection() {
       setSubmitStatus("Please fill in all fields");
       return;
     }
-
     setIsSubmitting(true);
     setSubmitStatus("");
 
