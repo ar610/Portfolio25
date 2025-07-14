@@ -5,7 +5,7 @@ export default function About() {
   const handleDownloadResume = () => {
     const link = document.createElement("a");
     link.href =
-      "https://drive.google.com/file/d/1hWodMeDzmasuC1AHjPuiL3B_ZnHVGPe6/view?usp=drive_link"; // replace with your ID
+      "https://drive.google.com/file/d/1f8Nr2i_I-TgQOoegrRchHgtMwJJsEZjN/view?usp=sharing"; // replace with your ID
     link.download = "My_Resume.pdf";
     document.body.appendChild(link);
     link.click();
