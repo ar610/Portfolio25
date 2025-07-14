@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Cursor from "../components/Cursor";
 import Nav from "../components/Nav";
-import Profile from "../assets/Amal.png";
+import Profile from "../assets/Amal.webp";
 import { Github, Linkedin, Instagram, Download } from "lucide-react";
 import { motion } from "framer-motion";
 
