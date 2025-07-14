@@ -61,7 +61,7 @@ export default function ContactSection() {
       <div className="mt-24 mb-8 w-full max-w-6xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
         {/* Left Column - Content */}
         <div className="space-y-8">
-          <h1 className="text-6xl lg:text-7xl font-bold text-black leading-tight">
+          <h1 className="text-5xl lg:text-7xl font-bold text-black leading-tight">
             Contact Me
           </h1>
 
@@ -74,7 +74,7 @@ export default function ContactSection() {
           {/* Social Media Icons */}
           <div className="flex space-x-6 pt-4">
             <a
-              href="www.linkedin.com/in/amal-raj-r-0b1ab6292"
+              href="https://www.linkedin.com/in/amal-raj-r-0b1ab6292"
               className="w-12 h-12 bg-black rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors"
               aria-label="LinkedIn"
             >

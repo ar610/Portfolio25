@@ -124,7 +124,7 @@ const MyWorks = () => {
               <button
                 key={tab}
                 onClick={() => setActiveTab(tab)}
-                className={`relative group cursor-pointer px-8 py-3 rounded-full font-medium transition-all duration-300 ${
+                className={`relative group cursor-pointer lg:px-8 px-5 lg:py-3 py-3 rounded-full font-medium transition-all duration-300 ${
                   activeTab === tab
                     ? "text-white"
                     : "text-gray-700 hover:text-black"
@@ -169,7 +169,7 @@ const MyWorks = () => {
             </div>
           ):
         (
-        <div className="space-y-8 w-[60vw]">
+        <div className="space-y-8 lg:w-[60vw] w=[80vw]">
           {filteredProjects.map((project, index) => (
             <ProjectCard
               key={index}

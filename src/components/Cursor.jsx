@@ -14,7 +14,7 @@ export default function Cursor() {
 
   return (
     <div
-      className="fixed top-0 left-0 w-6 h-6 bg-cyan-400 rounded-full pointer-events-none z-[9999] mix-blend-hard-light	 transition-transform duration-300 ease-out"
+      className="lg:block hidden fixed top-0 left-0 w-6 h-6 bg-cyan-400 rounded-full pointer-events-none z-[9999] mix-blend-hard-light	 transition-transform duration-300 ease-out"
       style={{
         transform: `translate(${position.x - 12}px, ${position.y - 12}px)`,
       }}

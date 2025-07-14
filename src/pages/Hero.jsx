@@ -186,7 +186,7 @@ export default function Hero() {
               {/* Social Links */}
               <div className="hidden lg:flex space-x-6 mb-5">
                 <a
-                  href="www.linkedin.com/in/amal-raj-r-0b1ab6292"
+                  href="https://www.linkedin.com/in/amal-raj-r-0b1ab6292"
                   className="p-3 border border-gray-600 rounded-lg hover:border-cyan-400 hover:text-cyan-400 transition-all duration-200"
                 >
                   <Linkedin size={24} />

@@ -108,11 +108,11 @@ const SkillsPage = () => {
       <div className="w-full mx-auto flex flex-col items-center justify-center mt-18">
         {/* Header */}
         <div className="text-center mb-8 mt-10" >
-          <h1 className="lg:text-6xl text-4xl font-bold text-gray-900 mb-4">
+          <h1 className="lg:text-6xl text-3xl font-bold text-gray-900 mb-4">
             Skills
           </h1>
           
-          <span className="lg:text-7xl text-5xl font-bold bg-gradient-to-r from-blue-600 via-blue-500 to-blue-400 bg-clip-text text-transparent">
+          <span className="lg:text-7xl text-3xl font-bold bg-gradient-to-r from-blue-600 via-blue-500 to-blue-400 bg-clip-text text-transparent">
                  Design & Development
               </span>
         </div>
@@ -128,7 +128,7 @@ const SkillsPage = () => {
               <span
                 key={`ref-${index}`}
                 ref={el => skillRefs.current[index] = el}
-                className="px-6 py-3 bg-white border-2 border-gray-300 rounded-full text-gray-800 font-medium text-lg"
+                className="px-6 py-3 bg-white border-2 border-gray-300 rounded-full text-gray-800 font-medium text-lg "
               >
                 {skill}
               </span>

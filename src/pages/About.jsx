@@ -20,13 +20,13 @@ export default function About() {
       className="relative z-30 min-h-screen  flex lg:flex-row flex-col items-center justify-center p-8 transition-transform duration-300 ease-out "
     >
       {/* Image */}
-      <div className="w-[50vw]  flex justify-center items-center mt-24 lg:mb-16 mb:8">
-        <div className="w-[50vw] flex justify-center items-center">
+      <div className="lg:w-[50vw] w-[70vw]  flex justify-center items-center mt-24 lg:mb-16 mb:8">
+        <div className="w-[70vw] flex justify-center items-center">
           <div>
             <img
               src={Amal2}
               alt="Your Profile"
-              className="lg:w-auto lg:h-[60vh] w-[50vw] h-auto object-cover"
+              className="lg:w-auto lg:h-[60vh] w-[80vw] h-auto object-cover"
             />
           </div>
         </div>
@@ -36,13 +36,12 @@ export default function About() {
         <div className="pr-8">
           {/* Main Heading */}
           <div className="space-y-0.5 ">
-            <h1 className="lg:text-6xl text-3xl font-bold text-gray-900">Hi There,</h1>
-            <h2 className="text-5xl md:text-6xl lg:text-6xl font-bold leading-tight">
-              I am{" "}<div className=" lg:hidden inline"><br/></div>
-              <span className="bg-gradient-to-r from-blue-600 via-blue-500 to-blue-400 bg-clip-text text-transparent">
-                Amal Raj R
-              </span>
-            </h2>
+            <h1 className="w-full flex justify-center items-center lg:hidden text-2xl md:text-8xl font-syne mb-4 text-center bg-black bg-clip-text text-transparent">
+              Hi, I am
+            </h1>
+            <h1 className="w-full flex justify-center items-center lg:hidden text-4xl md:text-8xl font-syne mb-4 text-center bg-gradient-to-r from-cyan-400 via-blue-500 to-blue-400 bg-clip-text text-transparent">
+              AMAL RAJ R
+            </h1>
           </div>
 
           {/* Description */}
@@ -65,7 +64,7 @@ export default function About() {
             >
               <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <svg
-                className="relative z-10 w-5 h-5 group-hover:animate-bounce"
+                className="relative z-10 w-[30%] group-hover:animate-bounce"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"

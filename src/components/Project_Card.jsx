@@ -4,7 +4,7 @@ export default function ProjectCard(props) {
   return (
     <>
       <div
-        className={`bg-white min-h-[250px] rounded-2xl  overflow-hidden hover:shadow-xl  transition-shadow duration-300 ${
+        className={`bg-white min-h-[250px]  rounded-2xl  overflow-hidden hover:shadow-xl  transition-shadow duration-300 ${
           props.index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
         } flex flex-col lg:flex `}
       >
