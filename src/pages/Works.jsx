@@ -1,33 +1,117 @@
-import React, { useState } from 'react';
-import { ExternalLink } from 'lucide-react';
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+import { ExternalLink } from "lucide-react";
 
+import ProjectCard from "../components/Project_Card";
+import PhotoFrame from "../components/PhotoFrame";
+import { title } from "framer-motion/client";
 const MyWorks = () => {
-  const [activeTab, setActiveTab] = useState('Dev Projects');
+  const [activeTab, setActiveTab] = useState("Dev Projects");
 
   const projects = [
     {
       id: 1,
-      title: 'NXT MOVIE',
-      description: 'NXT Movie - Your Personal Movie Watchlist! NXT Movie is a simple and fun web app that helps you manage your personal movie watchlist. Just type the name of a movie and our app fetches the poster and adds it to your collection. You can add and delete movies anytime.',
-      image: '/api/placeholder/400/300',
-      category: 'Dev Projects'
+      title: "NXT MOVIE",
+      description:
+        "NXT Movie - Your Personal Movie Watchlist! NXT Movie is a simple and fun web app that helps you manage your personal movie watchlist. Just type the name of a movie and our app fetches the poster and adds it to your collection. You can add and delete movies anytime. If you are bored spin to choose!",
+      image: "src/assets/nxtmovie.png",
+      link: "https://github.com/ar610/nxt-movie",
+      category: "Dev Projects",
     },
     {
       id: 2,
-      title: 'MOZHI',
-      description: 'NXT Movie - Your Personal Movie Watchlist! NXT Movie is a simple and fun web app that helps you manage your personal movie watchlist. Just type the name of a movie and our app fetches the poster and adds it to your collection. You can add and delete movies anytime.',
-      image: '/api/placeholder/400/300',
-      category: 'Art'
-    }
+      title: "MOZHI",
+      description:
+        "Indian Sign Language Learning platform with gamified user experience",
+      image: "src/assets/mozhi.png",
+      category: "Dev Projects",
+    },
+    {
+      id: 3,
+      title: "HOSTEL_O_Hub",
+      description:
+        "HosteloHub is a full-stack e-commerce platform designed specifically for college students. It serves as a centralized solution where students can find and rent hostels, owners can list their hostels, and alumni can sell their used items to incoming students.",
+      image: "src/assets/hostelohub.png",
+      link: "https://github.com/ar610/HOSTEL_E_COMMERCE",
+      category: "Dev Projects",
+    },
+    {
+      id: 4,
+      title: "Angel Bags",
+      description:
+        "A clean and minimal landing page for Angel Bags, a B2B premium bag manufacturing company. The design highlights the brand’s color options, material quality, and customization capabilities, aimed at attracting bulk buyers and corporate clients",
+      image: "src/assets/angelbags.png",
+      category: "Designs",
+    },
+    {
+      id: 5,
+      title: "OOFDI",
+      description:
+        "Landing page design for Oofdi, a local delivery service platform. The goal was to establish a trustworthy brand presence and clearly communicate service benefits to both customers and delivery partners. The layout guides users through key offerings, how the platform works, and call-to-action points.",
+      image: "src/assets/oofdi.png",
+      category: "Designs",
+    },
+    {
+      id: 6,
+      title: "ShowMySkills",
+      description:
+        "A full-fledged UI design for ShowMySkills, a web platform to showcase individual talents and find collaborators or opportunities based on specific skills. Designed profile pages, skill categories, and a clean navigation flow to encourage discovery and connection.",
+      image: "src/assets/showmyskills.png",
+      category: "Designs",
+    },{
+      id:7,
+      image:"src/assets/thudarum.jpg",
+      category:"Art",
+    },
+    {
+      id:8,
+      image:"src/assets/zuko.jpg",
+      category:"Art",
+    },
+    {
+      id:9,
+      image:"src/assets/96.jpg",
+      category:"Art",
+    },
+    {
+      id:10,
+      image:"src/assets/sg.jpg",
+      category:"Art",
+    },
+    {
+      id:11,
+      image:"src/assets/self.jpg",
+      category:"Art",
+    },
+    {
+      id:12,
+      image:"src/assets/jane.jpg",
+      category:"Art",
+    },
+    {
+      id:13,
+      image:"src/assets/krishnan.jpg",
+      category:"Art",
+    },
+    {
+      id:14,
+      image:"src/assets/jigar.jpg",
+      category:"Art",
+    },
+
   ];
 
-  const tabs = ['Dev Projects', 'Designs', 'Art'];
 
-  const filteredProjects = projects.filter(project => project.category === activeTab);
+
+  const tabs = ["Dev Projects", "Designs", "Art"];
+
+  const filteredProjects = projects.filter(
+    (project) => project.category === activeTab
+  );
 
   return (
-    <div className="relative min-h-screen bg-gradient-to-br from-purple-100 via-blue-50 to-indigo-100 p-8 z-30 ">
-      <div className="max-w-6xl mx-auto flex flex-col items-center justify-center">
+    <div id="works" className="relative min-h-screen  p-8 z-30 ">
+      <div className="max-w-6xl mx-auto flex flex-col items-center justify-center mt-24">
         {/* Header */}
         <h1 className="text-5xl font-bold text-gray-800 text-center mb-12">
           My Works
@@ -40,58 +124,65 @@ const MyWorks = () => {
               <button
                 key={tab}
                 onClick={() => setActiveTab(tab)}
-                className={`px-8 py-3 rounded-full font-medium transition-all duration-300 ${
+                className={`relative group cursor-pointer px-8 py-3 rounded-full font-medium transition-all duration-300 ${
                   activeTab === tab
-                    ? 'bg-blue-400 text-white shadow-lg'
-                    : 'text-gray-700 hover:bg-blue-300'
+                    ? "text-white"
+                    : "text-gray-700 hover:text-black"
                 }`}
               >
+                {activeTab === tab && (
+                  <motion.div
+                    layoutId="active-pill"
+                    className="absolute inset-0 bg-blue-400 rounded-full flex items-center justify-center"
+                    transition={{
+                      type: "spring",
+                      stiffness: 500,
+                      damping: 30,
+                    }}
+                  >
+                    {tab}
+                  </motion.div>
+                )}
+
                 {tab}
+                {/* Active tab background transition */}
+                <span
+                  className={`absolute left-[25%] bottom-3 w-0 h-0.5 bg-black transition-all duration-300 ${
+                    activeTab === tab ? "" : "group-hover:w-[50%]"
+                  }`}
+                ></span>
               </button>
             ))}
           </div>
         </div>
-
-        {/* Projects Grid */}
+          {activeTab === "Art" ? (
+            <div className="space-y-8 space-x-6 flex flex-row justify-center flex-wrap  w-[80vw]">
+              {filteredProjects.map((project, index) => (
+                <PhotoFrame
+                  key={index}
+                  id={project.id}
+                  index={index}
+                  image={project.image}
+                  
+                />
+              ))}
+            </div>
+          ):
+        (
         <div className="space-y-8 w-[60vw]">
           {filteredProjects.map((project, index) => (
-            <div
-              key={project.id}
-              className={`bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 ${
-                index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'
-              } flex flex-col lg:flex`}
-            >
-              {/* Project Image */}
-              <div className="lg:w-[40%] bg-gray-900 p-6 flex items-center justify-center">
-               
-                
-                
-              </div>
-
-              {/* Project Info */}
-              <div className="lg:w-[60%] p-8 flex flex-col justify-center">
-                <h2 className="text-2xl font-bold text-gray-800 mb-4">
-                  {project.title}
-                </h2>
-                <p className="text-gray-600 leading-relaxed mb-6">
-                  {project.description}
-                </p>
-                <button className="flex items-center gap-2 text-blue-600 hover:text-blue-800 font-medium transition-colors duration-200 self-start">
-                  View Project
-                  <ExternalLink size={16} />
-                </button>
-              </div>
-            </div>
+            <ProjectCard
+              key={index}
+              id={project.id}
+              index={index}
+              title={project.title}
+              description={project.description}
+              link={project.link}
+              image={project.image}
+              category={project.category}
+            />
           ))}
-        </div>
-
-        {/* View All Projects Button */}
-        <div className="text-center mt-12">
-          <button className="flex items-center gap-2 text-gray-700 hover:text-gray-900 font-medium transition-colors duration-200 mx-auto">
-            View All Projects
-            <ExternalLink size={16} />
-          </button>
-        </div>
+        </div>)}
       </div>
     </div>
   );

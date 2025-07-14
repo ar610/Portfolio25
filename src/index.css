@@ -1,13 +1,7 @@
 @import "tailwindcss";
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-@theme {
-  --font-cedarville: 'cedarville', 'cursive';
-  --font-syne: 'syne', 'sans-serif';
-  
-}
+
+
 html {
   scroll-behavior: smooth;
 }
@@ -38,16 +32,17 @@ html {
 }
 
 .draw-border:hover::before {
-  animation: draw-border-animation 1.5s ease-in-out forwards;
+  animation: draw-border-animation .8s ease-in-out forwards;
 }
-
+/* Top left, top right, bottom right, bottom left */
 @keyframes draw-border-animation {
   0% {
     clip-path: polygon(0 0, 0 0, 0 0, 0 0);
   }
 
+  
   50% {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 100%, 100% 100%, 100% 100%);
   }
 
   100% {

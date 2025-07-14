@@ -104,25 +104,26 @@ const SkillsPage = () => {
   };
 
   return (
-    <div id='skills' className="  relative min-h-screen bg-gradient-to-br from-purple-100 via-blue-50 to-indigo-100 p-8 z-30">
-      <div className="w-full mx-auto flex flex-col items-center justify-center">
+    <div id='skills' className="  relative min-h-screen  p-8 z-30 ">
+      <div className="w-full mx-auto flex flex-col items-center justify-center mt-18">
         {/* Header */}
-        <div className="text-center mb-16 mt-10" >
-          <h1 className="text-6xl font-bold text-gray-900 mb-4">
+        <div className="text-center mb-8 mt-10" >
+          <h1 className="lg:text-6xl text-4xl font-bold text-gray-900 mb-4">
             Skills
           </h1>
-          <h2 className="text-7xl font-bold text-gray-800">
-            Design & Development
-          </h2>
+          
+          <span className="lg:text-7xl text-5xl font-bold bg-gradient-to-r from-blue-600 via-blue-500 to-blue-400 bg-clip-text text-transparent">
+                 Design & Development
+              </span>
         </div>
 
         {/* Skills Container */}
         <div 
           ref={containerRef}
-          className="relative mb-20 min-h-[400px] w-3/4 flex justify-center items-center flex-wrap "
+          className="relative  min-h-[400px] w-3/4 flex justify-center items-center flex-wrap "
         >
           {/* Initial Layout (hidden, used for position calculation) */}
-          <div className="flex flex-wrap justify-center gap-4 opacity-0 pointer-events-none mt-10 ">
+          <div className="flex flex-wrap justify-center gap-4 opacity-0 pointer-events-none  ">
             {skills.map((skill, index) => (
               <span
                 key={`ref-${index}`}
