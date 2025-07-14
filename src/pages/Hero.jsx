@@ -120,7 +120,7 @@ export default function Hero() {
           {/* Main Content */}
 
           {/* Left Content */}
-          <div className="absolute left-1/2 top-[25%] transform -translate-x-1/2 -translate-y-1/2 lg:left-50 lg:top-90 lg:translate-x-0 lg:translate-y-[-50%] lg:max-w-xl w-full">
+          <div className="absolute z-24 left-1/2 top-[25%] transform -translate-x-1/2 -translate-y-1/2 lg:left-50 lg:top-90 lg:translate-x-0 lg:translate-y-[-50%] lg:max-w-xl w-full">
             {/* Hi iam amal */}
             <motion.div
               initial={{ opacity: 0, y: 50 }}

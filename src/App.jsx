@@ -1,6 +1,4 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 import Cursor from "./components/Cursor";
 import About from "./pages/About";
@@ -14,7 +12,6 @@ import Works from "./pages/Works";
 import Footer from "./components/Footer";
 import Loader from "./components/Loader";
 import { useEffect } from "react";
-
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -35,20 +32,16 @@ function App() {
     <>
       <div className="relative bg-[#14151C] min-h-screen">
         {/* Ripple Background - Fixed position covers entire viewport */}
-        
-        
         {/* Existing content with proper z-index layering */}
         <div className="relative z-10">
           <Cursor />
           <Nav />
           <Hero />
           <div
-  className="relative z-30 bg-gradient-to-br from-purple-100 via-blue-50 to-indigo-100 bg-no-repeat bg-cover"
-  style={{ backgroundImage: "url('/src/assets/bg3.jpg')" }}
->
-           
+            className="relative z-30 bg-gradient-to-br from-purple-100 via-blue-50 to-indigo-100 bg-no-repeat bg-cover"
+            style={{ backgroundImage: "url('/bg3.jpg')" }}
+          >
             <About />
-            
             <SkillsPage />
             <Works />
             <Contact />

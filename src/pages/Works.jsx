@@ -14,7 +14,7 @@ const MyWorks = () => {
       title: "NXT MOVIE",
       description:
         "NXT Movie - Your Personal Movie Watchlist! NXT Movie is a simple and fun web app that helps you manage your personal movie watchlist. Just type the name of a movie and our app fetches the poster and adds it to your collection. You can add and delete movies anytime. If you are bored spin to choose!",
-      image: "src/assets/nxtmovie.png",
+      image: "/nxtmovie.png",
       link: "https://github.com/ar610/nxt-movie",
       category: "Dev Projects",
     },
@@ -23,7 +23,7 @@ const MyWorks = () => {
       title: "MOZHI",
       description:
         "Indian Sign Language Learning platform with gamified user experience",
-      image: "src/assets/mozhi.png",
+      image: "/mozhi.png",
       category: "Dev Projects",
     },
     {
@@ -31,7 +31,7 @@ const MyWorks = () => {
       title: "HOSTEL_O_Hub",
       description:
         "HosteloHub is a full-stack e-commerce platform designed specifically for college students. It serves as a centralized solution where students can find and rent hostels, owners can list their hostels, and alumni can sell their used items to incoming students.",
-      image: "src/assets/hostelohub.png",
+      image: "/hostelohub.png",
       link: "https://github.com/ar610/HOSTEL_E_COMMERCE",
       category: "Dev Projects",
     },
@@ -40,7 +40,7 @@ const MyWorks = () => {
       title: "Angel Bags",
       description:
         "A clean and minimal landing page for Angel Bags, a B2B premium bag manufacturing company. The design highlights the brand’s color options, material quality, and customization capabilities, aimed at attracting bulk buyers and corporate clients",
-      image: "src/assets/angelbags.png",
+      image: "/angelbags.png",
       category: "Designs",
     },
     {
@@ -48,7 +48,7 @@ const MyWorks = () => {
       title: "OOFDI",
       description:
         "Landing page design for Oofdi, a local delivery service platform. The goal was to establish a trustworthy brand presence and clearly communicate service benefits to both customers and delivery partners. The layout guides users through key offerings, how the platform works, and call-to-action points.",
-      image: "src/assets/oofdi.png",
+      image: "/oofdi.png",
       category: "Designs",
     },
     {
@@ -56,46 +56,46 @@ const MyWorks = () => {
       title: "ShowMySkills",
       description:
         "A full-fledged UI design for ShowMySkills, a web platform to showcase individual talents and find collaborators or opportunities based on specific skills. Designed profile pages, skill categories, and a clean navigation flow to encourage discovery and connection.",
-      image: "src/assets/showmyskills.png",
+      image: "/showmyskills.png",
       category: "Designs",
     },{
       id:7,
-      image:"src/assets/thudarum.jpg",
+      image:"/thudarum.jpg",
       category:"Art",
     },
     {
       id:8,
-      image:"src/assets/zuko.jpg",
+      image:"/zuko.jpg",
       category:"Art",
     },
     {
       id:9,
-      image:"src/assets/96.jpg",
+      image:"/96.jpg",
       category:"Art",
     },
     {
       id:10,
-      image:"src/assets/sg.jpg",
+      image:"/sg.jpg",
       category:"Art",
     },
     {
       id:11,
-      image:"src/assets/self.jpg",
+      image:"/self.jpg",
       category:"Art",
     },
     {
       id:12,
-      image:"src/assets/jane.jpg",
+      image:"/jane.jpg",
       category:"Art",
     },
     {
       id:13,
-      image:"src/assets/krishnan.jpg",
+      image:"/krishnan.jpg",
       category:"Art",
     },
     {
       id:14,
-      image:"src/assets/jigar.jpg",
+      image:"/jigar.jpg",
       category:"Art",
     },
 
