@@ -60,11 +60,11 @@ export default function About() {
           <div className="mt-8">
             <button
               onClick={handleDownloadResume}
-              className="group relative inline-flex items-center gap-3 bg-gradient-to-r from-gray-900 to-gray-700 text-white px-8 py-4 rounded-xl text-lg font-semibold overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300"
+              className="group relative inline-flex items-center gap-3 bg-gradient-to-r from-gray-900 to-gray-700 text-white px-4 py-4 rounded-xl text-lg font-semibold overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <svg
-                className="relative z-10 w-[30%] group-hover:animate-bounce"
+                className="relative z-10 w-10 h-10 group-hover:animate-bounce"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
