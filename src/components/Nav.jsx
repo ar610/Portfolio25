@@ -123,17 +123,18 @@ export default function Nav() {
                 About
               </button>
               <button
-                onClick={() => scrollToSection('works')}
-                className="text-white text-2xl font-light hover:text-gray-300 transition-colors duration-200"
-              >
-                Projects
-              </button>
-              <button
                 onClick={() => scrollToSection('skills')}
                 className="text-white text-2xl font-light hover:text-gray-300 transition-colors duration-200"
               >
                 Skills
               </button>
+              <button
+                onClick={() => scrollToSection('works')}
+                className="text-white text-2xl font-light hover:text-gray-300 transition-colors duration-200"
+              >
+                Projects
+              </button>
+              
               <button
                 onClick={() => scrollToSection('contact')}
                 className="text-white text-2xl font-light hover:text-gray-300 transition-colors duration-200"
