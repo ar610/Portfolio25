@@ -33,7 +33,7 @@ export default function About() {
       </div>
       {/* Text */}
       <div className="w-[70vw] lg:w-[40vw] flex flex-col items-center justify-center mx-auto lg:text-left text-center space-y-8 mt-24 mb-16">
-        <div className="pr-8">
+        <div className="lg:pr-8 pr-0">
           {/* Main Heading */}
           <div className="space-y-0.5 ">
             <h1 className="w-full flex justify-center items-center lg:hidden text-2xl md:text-8xl font-syne mb-4 text-center bg-black bg-clip-text text-transparent">
